@@ -17,8 +17,8 @@ $(function() {
       $('#address').text(data.results[0].address3);
     })
     // Ajaxリクエストが失敗した時発動
-    .fail( (data) => {
-        console.log('fail');
+    .fail( (error) => {
+        console.log(error);
     })
     // Ajaxリクエストが成功・失敗どちらでも発動
     .always( (data) => {
