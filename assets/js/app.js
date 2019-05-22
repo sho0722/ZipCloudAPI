@@ -2,7 +2,7 @@ $(function() {
   $('#search-btn').on('click', function() {
     let zipcode = $('#search-word').val();
     $.ajax({
-      url:'http://zipcloud.ibsnet.co.jp/api/search',
+      url:'//zipcloud.ibsnet.co.jp/api/search',
       type:'GET',
       dataType: 'jsonp',
       data:{
